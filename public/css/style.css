@@ -135,7 +135,7 @@ hr {
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
   background-color: #fff;
-  border-color: #608dfd;
+  border-color: #285cdf;
 }
 .navbar-default .navbar-toggle:hover > .icon-bar {
   background-color: #608dfd;
@@ -590,7 +590,7 @@ label {
 }
 #footer p {
   color: #888;
-  font-size: 14px;
+  font-size: 8px;
 }
 #footer a {
   color: #608dfd;
