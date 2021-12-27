@@ -1,21 +1,21 @@
 {
   "Header": {
-    "title": "We are a Landing Page",
-    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sed commodo nibh ante facilisis bibendum."
+    "title": "Project Advantage",
+    "paragraph": "Project Management, Solution Architecture, Software Design"
   },
   "About": {
-    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "paragraph": "Over 20 years of project experience across a number of industries and functional areas",
     "Why": [
-      "Lorem ipsum dolor",
-      "Tempor incididunt",
-      "Lorem ipsum dolor",
-      "Incididunt ut labore"
+      "Supply Chain",
+      "Human Resources",
+      "Airline",
+      "Insurance"
     ],
     "Why2": [
-      "Aliquip ex ea commodo",
-      "Lorem ipsum dolor",
-      "Exercitation ullamco",
-      "Lorem ipsum dolor"
+      "Commodities Trading",
+      "Content Publishing",
+      "Consumer Packaged Goods",
+      "Fashion"
     ]
   },
   "Gallery": [
@@ -152,16 +152,17 @@
     }
   ],
   "Contact": {
-    "address": "4321 California St, San Francisco, CA 12345 ",
-    "phone": "+1 123 456 1234",
-    "email": "info@company.com",
+    "address": "KY 41042 ",
+    "phone": "tbd",
+    "email": "tbd",
     "facebook": "fb.com",
     "twitter": "twitter.com",
-    "youtube": "youtube.com"
+    "youtube": "youtube.com",
+    "linkedin": "linkedin.com"
   },
   "Features": [
     {
-      "icon": "fa fa-comments-o",
+      "icon": "fa fa-hospital-o",
       "title": "Lorem ipsum",
       "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
     },
