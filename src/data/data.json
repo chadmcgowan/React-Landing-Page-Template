@@ -162,22 +162,22 @@
   },
   "Features": [
     {
-      "icon": "fa fa-hospital-o",
+      "icon": "fa fa-group",
       "title": "Human Resource Systems",
       "text": "HR Transformation, Succession Planning, Compensation, Talent Management, Learning Management"
     },
     {
-      "icon": "fa fa-bullhorn",
+      "icon": "fa fa-truck",
       "title": "Supply Chain Systems",
       "text": "Warehouse Management, Microfulfillment, Replenishment, Forecast Planning, Inventory Planning"
     },
     {
-      "icon": "fa fa-group",
+      "icon": "fa fa-hospital-o",
       "title": "Insurance Systems",
       "text": "Member Management, Group Administration, Claims Processing, Member Benefits"
     },
     {
-      "icon": "fa fa-magic",
+      "icon": "fa fa-bullhorn",
       "title": "Content Management Systems",
       "text": "Customer Facing Portals, Web Publishing, Marketing Sites"
     }
