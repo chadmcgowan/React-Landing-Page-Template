@@ -4,18 +4,18 @@
     "paragraph": "Project Management, Solution Architecture, Software Design"
   },
   "About": {
-    "paragraph": "Over 20 years of project experience across a number of industries and functional areas",
+    "paragraph": "With over 20 years of IT experience across a number of industries and functional areas, we've been trusted partners in helping clients deliver tough projects.",
     "Why": [
-      "Supply Chain",
-      "Human Resources",
-      "Airline",
+      "Retail",
+      "Health Care",
+      "Transportation and Warehousing",
       "Insurance"
     ],
     "Why2": [
       "Commodities Trading",
       "Content Publishing",
-      "Consumer Packaged Goods",
-      "Fashion"
+      "Telecommunications",
+      "Airline"
     ]
   },
   "Gallery": [
@@ -67,34 +67,34 @@
   ],
   "Services": [
     {
-      "icon": "fa fa-wordpress",
-      "name": "Lorem ipsum dolor",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "icon": "fa fa-check-square",
+      "name": "Project Management",
+      "text": "Providing expertise in traditional  and agile project management"
     },
     {
-      "icon": "fa fa-cart-arrow-down",
-      "name": "Consectetur adipiscing",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "icon": "fa fa-sitemap",
+      "name": "Solution Architecture",
+      "text": "Designing solutions for business needs with a focus on people, processes, and technology"
     },
     {
-      "icon": "fa fa-cloud-download",
-      "name": "Lorem ipsum dolor",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "icon": "fa fa-code",
+      "name": "Application Design and Development",
+      "text": "Full Stack Software Development "
     },
     {
-      "icon": "fa fa-language",
-      "name": "Consectetur adipiscing",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "icon": "fa fa-cloud",
+      "name": "Cloud Architecture",
+      "text": "Experienced in cloud migrations using public and private cloud solutions"
     },
     {
-      "icon": "fa fa-plane",
-      "name": "Lorem ipsum dolor",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "icon": "fa fa-cubes",
+      "name": "IoT Technologies",
+      "text": "Device, Edge, and Cloud computing solutions"
     },
     {
-      "icon": "fa fa-pie-chart",
-      "name": "Consectetur adipiscing",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "icon": "fa fa-github",
+      "name": "Dev Ops",
+      "text": "Help in defining and building your CI/CD pipelines"
     }
   ],
   "Testimonials": [
@@ -163,23 +163,23 @@
   "Features": [
     {
       "icon": "fa fa-hospital-o",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+      "title": "Human Resource Systems",
+      "text": "HR Transformation, Succession Planning, Compensation, Talent Management, Learning Management"
     },
     {
       "icon": "fa fa-bullhorn",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+      "title": "Supply Chain Systems",
+      "text": "Warehouse Management, Microfulfillment, Replenishment, Forecast Planning, Inventory Planning"
     },
     {
       "icon": "fa fa-group",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+      "title": "Insurance Systems",
+      "text": "Member Management, Group Administration, Claims Processing, Member Benefits"
     },
     {
       "icon": "fa fa-magic",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+      "title": "Content Management Systems",
+      "text": "Customer Facing Portals, Web Publishing, Marketing Sites"
     }
   ]
 }
