@@ -63,4 +63,4 @@ jobs:
           app-name: 'projectadvantage'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_3A936C9F768F463796FEB834CEE7EB5E }}
-          package: .
+          package: release.zip
