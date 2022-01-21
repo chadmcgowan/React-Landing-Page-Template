@@ -20,7 +20,7 @@ export const Contact = (props) => {
     console.log(name, email, message)
     emailjs
       .sendForm(
-        'YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID'
+        'service_jng5qtm', 'template_j8p6ml5', e.target, 'user_3ViM6YRaYRgcT9stPVEqF'
       )
       .then(
         (result) => {
