@@ -1,12 +1,14 @@
 import { useState } from 'react'
 import emailjs from 'emailjs-com'
 
-const initialState = {
-  name: '',
-  email: '',
-  message: '',
-}
+
 export const Contact = (props) => {
+  const initialState = {
+    name: '',
+    email: '',
+    message: ''
+  }
+  
   const [{ name, email, message }, setState] = useState(initialState)
 
   const handleChange = (e) => {
@@ -17,6 +19,7 @@ export const Contact = (props) => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
+   
     console.log(name, email, message)
     emailjs
       .sendForm(
@@ -24,7 +27,7 @@ export const Contact = (props) => {
       )
       .then(
         (result) => {
-          console.log(result.text)
+          console.log("result " + result.text)
           clearState()
         },
         (error) => {
@@ -45,7 +48,7 @@ export const Contact = (props) => {
                   get back to you as soon as possible.
                 </p>
               </div>
-              <form name='sentMessage' validate onSubmit={handleSubmit}>
+              <form name='sentMessage' validate='true' onSubmit={handleSubmit}>
                 <div className='row'>
                   <div className='col-md-6'>
                     <div className='form-group'>
@@ -57,6 +60,7 @@ export const Contact = (props) => {
                         placeholder='Name'
                         required
                         onChange={handleChange}
+                        value={name}
                       />
                       <p className='help-block text-danger'></p>
                     </div>
@@ -71,6 +75,7 @@ export const Contact = (props) => {
                         placeholder='Email'
                         required
                         onChange={handleChange}
+                        value={email}
                       />
                       <p className='help-block text-danger'></p>
                     </div>
@@ -85,6 +90,7 @@ export const Contact = (props) => {
                     placeholder='Message'
                     required
                     onChange={handleChange}
+                    value={message}
                   ></textarea>
                   <p className='help-block text-danger'></p>
                 </div>
