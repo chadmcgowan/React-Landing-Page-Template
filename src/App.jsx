@@ -10,7 +10,10 @@ import { Services } from "./components/services";
 import { Contact } from "./components/contact";
 import JsonData from "./data/data.json";
 import SmoothScroll from "smooth-scroll";
+import Notifications from 'react-notify-toast';
+import 'react-toastify/dist/ReactToastify.css'
 import "./App.css";
+import {Toast} from './components/toast';
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 1000,
@@ -21,6 +24,7 @@ const App = () => {
   const [landingPageData, setLandingPageData] = useState({});
   useEffect(() => {
     setLandingPageData(JsonData);
+
   }, []);
 
   return (
@@ -36,6 +40,7 @@ const App = () => {
       {/* <Testimonials data={landingPageData.Testimonials} /> */}
       {/* <Team data={landingPageData.Team} />  */}
       <Contact data={landingPageData.Contact} />
+      
     </div>
   );
 };

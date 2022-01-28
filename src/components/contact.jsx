@@ -1,5 +1,11 @@
 import { useState } from 'react'
 import emailjs from 'emailjs-com'
+import checkIcon from './check.svg';
+import errorIcon from './error.svg';
+import infoIcon from './info.svg';
+import warningIcon from './warning.svg';
+import  { Toast } from './toast'
+
 
 
 export const Contact = (props) => {
@@ -8,14 +14,66 @@ export const Contact = (props) => {
     email: '',
     message: ''
   }
-  
   const [{ name, email, message }, setState] = useState(initialState)
+  const [list, setList] = useState([]);
+  let toastProperties = null;
 
   const handleChange = (e) => {
+    console.log('changed')
     const { name, value } = e.target
     setState((prevState) => ({ ...prevState, [name]: value }))
+    
   }
   const clearState = () => setState({ ...initialState })
+
+  const showToast = type => {
+    console.log("show toast ");
+    const id = Math.floor((Math.random() * 101) + 1);
+
+    switch(type) {
+      case 'success':
+        toastProperties = {
+          id,
+          title: 'Thank You',
+          description: 'We will be in touch soon!',
+          backgroundColor: '#5cb85c',
+          icon: checkIcon
+        }
+        break;
+      case 'danger':
+        toastProperties = {
+          id,
+          title: 'Danger',
+          description: 'This is a error toast component',
+          backgroundColor: '#d9534f',
+          icon: errorIcon
+        }
+        break;
+      case 'info':
+        toastProperties = {
+          id,
+          title: 'Info',
+          description: 'This is an info toast component',
+          backgroundColor: '#5bc0de',
+          icon: infoIcon
+        }
+        break;
+      case 'warning':
+        toastProperties = {
+          id,
+          title: 'Warning',
+          description: 'This is a warning toast component',
+          backgroundColor: '#f0ad4e',
+          icon: warningIcon
+        }
+        break;
+
+        default:
+          setList([]);
+    }
+
+    setList([...list, toastProperties]);
+  }
 
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -29,6 +87,7 @@ export const Contact = (props) => {
         (result) => {
           console.log("result " + result.text)
           clearState()
+          showToast('success')
         },
         (error) => {
           console.log(error.text)
@@ -153,6 +212,12 @@ export const Contact = (props) => {
           </div>
         </div>
       </div>
+      <Toast 
+        toastList={list}
+        position='bottom-left'
+        autoDelete='false'
+        dismissTime='10000'
+      />
       <div id='footer'>
         <div className='container text-center light'>
         </div>
