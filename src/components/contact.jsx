@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import emailjs from 'emailjs-com'
 import checkIcon from './check.svg';
 import errorIcon from './error.svg';
@@ -12,20 +12,22 @@ export const Contact = (props) => {
   const initialState = {
     name: '',
     email: '',
-    message: ''
+    message: '',
+    sending: false
   }
-  const [{ name, email, message }, setState] = useState(initialState)
+  const [{ name, email, message, sending }, setState] = useState(initialState)
   const [list, setList] = useState([]);
-  let toastProperties = null;
 
+  let toastProperties = null;
   const handleChange = (e) => {
     console.log('changed')
     const { name, value } = e.target
     setState((prevState) => ({ ...prevState, [name]: value }))
     
   }
-  const clearState = () => setState({ ...initialState })
-
+  const clearState = () => {
+    setState({ ...initialState })
+  }
   const showToast = type => {
     console.log("show toast ");
     const id = Math.floor((Math.random() * 101) + 1);
@@ -77,8 +79,7 @@ export const Contact = (props) => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-   
-    console.log(name, email, message)
+    setState({name:name, email:email,message:message,sending : true})
     emailjs
       .sendForm(
         'service_jng5qtm', 'template_j8p6ml5', e.target, 'user_3ViM6YRaYRgcT9stPVEqF'
@@ -95,6 +96,8 @@ export const Contact = (props) => {
       )
   }
   return (
+    console.log("sending = " + {sending}),
+
     <div>
       <div id='contact'>
         <div className='container'>
@@ -155,7 +158,14 @@ export const Contact = (props) => {
                 </div>
                 <div id='success'></div>
                 <button type='submit' className='btn btn-custom btn-lg'>
-                  Send Message
+                {sending && (
+                  <i
+                    className="fa fa-refresh fa-spin"
+                    style={{ marginRight: "5px" }}
+                  />
+                  )}
+                  {sending && <span>Sending Message</span>}
+                  {!sending && <span>Send Message</span>}
                 </button>
               </form>
             </div>
@@ -215,8 +225,8 @@ export const Contact = (props) => {
       <Toast 
         toastList={list}
         position='bottom-left'
-        autoDelete='false'
-        dismissTime='10000'
+        autoDelete={true}
+        dismissTime={7000}
       />
       <div id='footer'>
         <div className='container text-center light'>
