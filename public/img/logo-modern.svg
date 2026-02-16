@@ -1,0 +1,23 @@
+<svg width="240" height="50" viewBox="0 0 240 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Geometric Icon - Modern Hexagon Pattern -->
+  <g id="icon">
+    <!-- Outer hexagon -->
+    <path d="M15 5L25 0L35 5L35 15L25 20L15 15L15 5Z" fill="#0E67B4"/>
+    <!-- Inner accent -->
+    <path d="M20 8.5L25 6L30 8.5L30 13.5L25 16L20 13.5L20 8.5Z" fill="#5ca9fb"/>
+    <!-- Central dot -->
+    <circle cx="25" cy="11" r="2" fill="white"/>
+
+    <!-- Second hexagon element -->
+    <path d="M5 15L15 10L25 15L25 25L15 30L5 25L5 15Z" fill="#5ca9fb" opacity="0.8"/>
+    <path d="M10 18.5L15 16L20 18.5L20 23.5L15 26L10 23.5L10 18.5Z" fill="#0E67B4"/>
+  </g>
+
+  <!-- Text: Project Advantage -->
+  <g id="text" fill="#0E67B4">
+    <!-- Project -->
+    <text x="45" y="18" font-family="'Raleway', Arial, sans-serif" font-size="16" font-weight="700" letter-spacing="0.5">Project</text>
+    <!-- Advantage -->
+    <text x="45" y="35" font-family="'Raleway', Arial, sans-serif" font-size="16" font-weight="700" letter-spacing="0.5" fill="#5ca9fb">Advantage</text>
+  </g>
+</svg>

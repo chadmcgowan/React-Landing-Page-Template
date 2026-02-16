@@ -10,6 +10,7 @@ import { Services } from "./components/services";
 import { Contact } from "./components/contact";
 import JsonData from "./data/data.json";
 import SmoothScroll from "smooth-scroll";
+import { useScrollReveal } from "./hooks/useScrollReveal";
 import 'react-toastify/dist/ReactToastify.css'
 import "./App.css";
 
@@ -20,10 +21,12 @@ export const scroll = new SmoothScroll('a[href*="#"]', {
 
 const App = () => {
   const [landingPageData, setLandingPageData] = useState({});
+
   useEffect(() => {
     setLandingPageData(JsonData);
-
   }, []);
+
+  useScrollReveal();
 
   return (
     <div>

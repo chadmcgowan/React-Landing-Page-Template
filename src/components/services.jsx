@@ -12,7 +12,7 @@ export const Services = (props) => {
         <div className='row'>
           {props.data
             ? props.data.map((d, i) => (
-                <div key={`${d.name}-${i}`} className='col-md-4'>
+                <div key={`${d.name}-${i}`} className='col-md-4 scroll-reveal' style={{transitionDelay: `${i * 0.1}s`}}>
                   {' '}
                   <i className={d.icon}></i>
                   <div className='service-desc'>

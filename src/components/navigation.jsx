@@ -1,6 +1,22 @@
+import { useEffect, useState } from 'react';
+
 export const Navigation = (props) => {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const isScrolled = window.scrollY > 50;
+      if (isScrolled !== scrolled) {
+        setScrolled(isScrolled);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [scrolled]);
+
   return (
-    <nav id='menu' className='navbar navbar-default navbar-fixed-top'>
+    <nav id='menu' className={`navbar navbar-default navbar-fixed-top ${scrolled ? 'navbar-scrolled' : ''}`}>
       <div className='container'>
         <div className='navbar-header'>
           <button
@@ -16,7 +32,7 @@ export const Navigation = (props) => {
             <span className='icon-bar'></span>{' '}
           </button>
           <a className='navbar-brand page-scroll' href='#page-top'>
-            <img src="img/logo2.png" alt="Project Advantage"/>
+            <img src="img/logo-modern.svg" alt="Project Advantage" style={{height: '50px', width: 'auto'}}/>
           </a>{' '}
         </div>
 
