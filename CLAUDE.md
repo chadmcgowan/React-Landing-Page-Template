@@ -152,6 +152,11 @@ npm test           # Run tests
 - Don't remove scroll animations without discussing first
 - Don't add emojis unless explicitly requested
 
+### 🔒 Git Workflow
+- **IMPORTANT:** Only push to master when explicitly approved by the user
+- Always ask before committing and pushing changes
+- User prefers to review changes before they go to production
+
 ### 📝 Content Guidelines
 - Keep messaging focused on value proposition
 - Emphasize partnership and expertise
