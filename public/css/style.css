@@ -714,6 +714,44 @@ label {
   #about img {
     margin: 50px 0;
   }
+
+  /* Hero Section - Mobile */
+  .intro {
+    background-attachment: scroll;
+  }
+  .intro h1 {
+    font-size: 36px;
+    letter-spacing: 1px;
+  }
+  .intro p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 30px;
+    padding: 0 15px;
+  }
+  header .intro-text {
+    padding-top: 180px;
+    padding-bottom: 100px;
+  }
+  .btn-custom {
+    padding: 12px 30px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .intro h1 {
+    font-size: 28px;
+    letter-spacing: 0.5px;
+  }
+  .intro p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  header .intro-text {
+    padding-top: 150px;
+    padding-bottom: 80px;
+  }
 }
 
 /* Scroll Reveal Animations */
