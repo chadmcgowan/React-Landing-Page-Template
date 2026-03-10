@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import emailjs from 'emailjs-com'
 import checkIcon from './check.svg';
 import errorIcon from './error.svg';
 import infoIcon from './info.svg';
@@ -79,21 +78,25 @@ export const Contact = (props) => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    setState({name:name, email:email,message:message,sending : true})
-    emailjs
-      .sendForm(
-        'service_jng5qtm', 'template_j8p6ml5', e.target, 'user_3ViM6YRaYRgcT9stPVEqF'
-      )
-      .then(
-        (result) => {
-          console.log("result " + result.text)
+    setState({ name, email, message, sending: true })
+    fetch('https://formspree.io/f/xqeyplge', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ name, email, message })
+    })
+      .then((response) => {
+        if (response.ok) {
           clearState()
           showToast('success')
-        },
-        (error) => {
-          console.log(error.text)
+        } else {
+          setState((prevState) => ({ ...prevState, sending: false }))
+          showToast('danger')
         }
-      )
+      })
+      .catch(() => {
+        setState((prevState) => ({ ...prevState, sending: false }))
+        showToast('danger')
+      })
   }
   return (
     console.log("sending = " + {sending}),

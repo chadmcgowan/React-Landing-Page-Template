@@ -167,11 +167,13 @@ npm test           # Run tests
 
 ## Contact Integration
 
-**EmailJS Configuration:**
-- Service: EmailJS
+**Formspree Configuration:**
+- Service: Formspree (replaced EmailJS which expired)
+- Endpoint: `https://formspree.io/f/xqeyplge`
 - Form: `src/components/contact.jsx`
-- Toast notifications: `react-toastify`
+- Toast notifications: custom Toast component
 - Fields: Name, Email, Message
+- Success/error toasts on submission
 - Contact: info@projectadvantageconsulting.com
 
 ---
